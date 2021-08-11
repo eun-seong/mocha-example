@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "sourceMap": true,
+    "target": "es2015",
     "module": "commonjs",
     "outDir": "./dist",
     "moduleResolution": "node",
@@ -11,5 +12,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "typeRoots": ["./node_modules/@types"]
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

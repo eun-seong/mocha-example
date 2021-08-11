@@ -2,12 +2,12 @@
   "name": "mocha-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "tsc && cross-env NODE_ENV=production node dist/app.js",
     "dev": "cross-env NODE_ENV=development nodemon --watch \"**\" --ext \"ts\" --exec \"ts-node --files\" src/app",
     "prod": "cross-env NODE_ENV=production nodemon --watch \"**\" --ext \"ts\" --exec \"ts-node --files\" src/app",
-    "test": "mocha"
+    "test": "mocha src/test/**/*.ts -r ts-node/register"
   },
   "repository": {
     "type": "git",
