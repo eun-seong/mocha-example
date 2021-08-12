@@ -1,9 +1,11 @@
 import { expect } from 'chai';
-import { sum } from '../index';
+import { Calculator } from '../index';
 
-describe('index.ts 테스트', () => {
-  it('sum 테스트', () => {
-    expect(sum(1, 1)).to.equal(2);
-    expect(sum(1, 1)).to.not.equal('히히');
+describe('Calculator 테스트', () => {
+  it('add 테스트', () => {
+    const calculator = new Calculator();
+
+    expect(calculator.add(1, 1)).to.equal(2);
+    expect(calculator.add(1, 1)).to.not.equal('히히');
   });
 });
